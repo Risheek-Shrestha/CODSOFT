@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -290,126 +291,129 @@
             </div>
         </section>
         <section class="section pricing-plans" id="pricing">
-    <div class="shapes-container overflow-clear">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <i class="icon pe pe-7s-cash pe-3x" data-aos="fade-down"></i>
-        <i class="icon fas fa-rupee-sign fa-3x" data-aos="fade-up"></i>
-        <i class="icon pe pe-7s-piggy pe-3x" data-aos="fade-up"></i>
-        <i class="icon pe pe-7s-cart pe-3x" data-aos="fade-left"></i>
-        <i class="icon far fa-credit-card fa-3x" data-aos="fade-down"></i>
-        <i class="icon far fa-money-bill-alt fa-3x" data-aos="fade-up"></i>
-    </div>
-    <div class="container">
-        <div class="section-heading text-center">
-            <span class="rounded-pill shadow-box bold py-2 px-4">
-                <i class="far fa-lightbulb text-primary mr-2"></i>
-                <span class="text-primary">Flexible</span> packages
-            </span>
-            <h2 class="mt-3 heading-line">Transparent Pricing</h2>
-            <p class="lead text-muted">
-                Our packages are designed for website and app projects of all sizes.
-                <span class="highlight">No hidden fees — just clear, honest pricing.</span>
-            </p>
-            <div id="pricing-basis-options" class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                    <input type="radio" name="pricing-basis" value="monthly" checked> Website
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="pricing-basis" value="yearly"> App
-                </label>
+            <div class="shapes-container overflow-clear">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <i class="icon pe pe-7s-cash pe-3x" data-aos="fade-down"></i>
+                <i class="icon fas fa-rupee-sign fa-3x" data-aos="fade-up"></i>
+                <i class="icon pe pe-7s-piggy pe-3x" data-aos="fade-up"></i>
+                <i class="icon pe pe-7s-cart pe-3x" data-aos="fade-left"></i>
+                <i class="icon far fa-credit-card fa-3x" data-aos="fade-down"></i>
+                <i class="icon far fa-money-bill-alt fa-3x" data-aos="fade-up"></i>
             </div>
-        </div>
-        <div class="row no-gutters align-items-center pricing-plans-options">
-            <div class="col-lg-4 pricing-plan plan-basic order-md-first">
-                <div class="p-5">
-                    <div class="text-center">
-                        <h4 class="text-alternate bold text-capitalize">Starter</h4>
-                        <p>Perfect for personal websites & small apps</p>
-                        <div class="pricing-details">
-                            <span class="pricing-value"><span class="odometer price" data-monthly="5000" data-yearly="7000">5000</span></span>
-                        </div>
-                        <a href="#!" class="more-link btn btn-outline-alternate mb-3">Get Started</a>
-                    </div>
-                    <hr>
-                    <div class="d-none d-md-flex">
-                        <ul class="list-group list-group-flush list-group-no-border">
-                            <li class="list-group-item">1-page website / app screen</li>
-                            <li class="list-group-item">Basic support via email</li>
-                            <li class="list-group-item">Mobile responsive / app-ready layout</li>
-                            <li class="list-group-item">Standard hosting / app setup</li>
-                            <li class="list-group-item">5GB storage</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 pricing-plan plan-business best-value">
-                <div class="p-5 py-md-6">
-                    <div class="text-center">
-                        <h4 class="text-primary bold text-capitalize">Business</h4>
-                        <p>Best for small businesses & startups</p>
-                        <div class="pricing-details">
-                            <span class="pricing-value"><span class="odometer price" data-monthly="25000" data-yearly="30000">25000</span></span>
-                        </div>
-                        <a href="#!" class="more-link btn btn-alternate mb-3">Choose Plan</a>
-                    </div>
-                    <hr>
-                    <div class="d-none d-md-flex">
-                        <ul class="list-group list-group-flush list-group-no-border">
-                            <li class="list-group-item">Up to 10-page website / 10 app screens</li>
-                            <li class="list-group-item">Priority email & chat support</li>
-                            <li class="list-group-item">SEO / App store optimization</li>
-                            <li class="list-group-item">Custom contact forms / app forms</li>
-                            <li class="list-group-item">100GB storage</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 pricing-plan plan-enterprise order-md-last">
-                <div class="p-5">
-                    <div class="text-center">
-                        <h4 class="text-alternate bold text-capitalize">Enterprise</h4>
-                        <p>Tailored solutions for large organizations</p>
-                        <div class="pricing-details">
-                            <span class="pricing-value"><span class="odometer price" data-monthly="100000" data-yearly="120000">100000</span></span>
-                        </div>
-                        <a href="#!" class="more-link btn btn-outline-alternate mb-3">Contact Us</a>
-                    </div>
-                    <hr>
-                    <div class="d-none d-md-flex">
-                        <ul class="list-group list-group-flush list-group-no-border">
-                            <li class="list-group-item">Unlimited pages & features</li>
-                            <li class="list-group-item">Dedicated account manager</li>
-                            <li class="list-group-item">Custom integrations & APIs</li>
-                            <li class="list-group-item">24/7 priority support</li>
-                            <li class="list-group-item">Unlimited storage</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container pt-0 border-bottom">
-        <div class="row align-items-center">
-            <div class="col-md-8">
-                <div class="text-center text-md-left">
-                    <h4 class="bold accent">Not sure which plan fits you best?</h4>
-                    <p class="mt-0">
-                        Start with the Starter plan for websites or apps, then upgrade as your business grows.
-                        <span class="italic dotted">All paid plans come with a 30-day free trial.</span>
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="rounded-pill shadow-box bold py-2 px-4">
+                        <i class="far fa-lightbulb text-primary mr-2"></i>
+                        <span class="text-primary">Flexible</span> packages
+                    </span>
+                    <h2 class="mt-3 heading-line">Transparent Pricing</h2>
+                    <p class="lead text-muted">
+                        Our packages are designed for website and app projects of all sizes.
+                        <span class="highlight">No hidden fees — just clear, honest pricing.</span>
                     </p>
+                    <div id="pricing-basis-options" class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="pricing-basis" value="monthly" checked> Website
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="pricing-basis" value="yearly"> App
+                        </label>
+                    </div>
+                </div>
+                <div class="row no-gutters align-items-center pricing-plans-options">
+                    <div class="col-lg-4 pricing-plan plan-basic order-md-first">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-alternate bold text-capitalize">Starter</h4>
+                                <p>Perfect for personal websites & small apps</p>
+                                <div class="pricing-details">
+                                    <span class="pricing-value"><span class="odometer price" data-monthly="5000"
+                                            data-yearly="7000">5000</span></span>
+                                </div>
+                                <a href="#!" class="more-link btn btn-outline-alternate mb-3">Get Started</a>
+                            </div>
+                            <hr>
+                            <div class="d-none d-md-flex">
+                                <ul class="list-group list-group-flush list-group-no-border">
+                                    <li class="list-group-item">1-page website / app screen</li>
+                                    <li class="list-group-item">Basic support via email</li>
+                                    <li class="list-group-item">Mobile responsive / app-ready layout</li>
+                                    <li class="list-group-item">Standard hosting / app setup</li>
+                                    <li class="list-group-item">5GB storage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pricing-plan plan-business best-value">
+                        <div class="p-5 py-md-6">
+                            <div class="text-center">
+                                <h4 class="text-primary bold text-capitalize">Business</h4>
+                                <p>Best for small businesses & startups</p>
+                                <div class="pricing-details">
+                                    <span class="pricing-value"><span class="odometer price" data-monthly="25000"
+                                            data-yearly="30000">25000</span></span>
+                                </div>
+                                <a href="#!" class="more-link btn btn-alternate mb-3">Choose Plan</a>
+                            </div>
+                            <hr>
+                            <div class="d-none d-md-flex">
+                                <ul class="list-group list-group-flush list-group-no-border">
+                                    <li class="list-group-item">Up to 10-page website / 10 app screens</li>
+                                    <li class="list-group-item">Priority email & chat support</li>
+                                    <li class="list-group-item">SEO / App store optimization</li>
+                                    <li class="list-group-item">Custom contact forms / app forms</li>
+                                    <li class="list-group-item">100GB storage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pricing-plan plan-enterprise order-md-last">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-alternate bold text-capitalize">Enterprise</h4>
+                                <p>Tailored solutions for large organizations</p>
+                                <div class="pricing-details">
+                                    <span class="pricing-value"><span class="odometer price" data-monthly="100000"
+                                            data-yearly="120000">100000</span></span>
+                                </div>
+                                <a href="#!" class="more-link btn btn-outline-alternate mb-3">Contact Us</a>
+                            </div>
+                            <hr>
+                            <div class="d-none d-md-flex">
+                                <ul class="list-group list-group-flush list-group-no-border">
+                                    <li class="list-group-item">Unlimited pages & features</li>
+                                    <li class="list-group-item">Dedicated account manager</li>
+                                    <li class="list-group-item">Custom integrations & APIs</li>
+                                    <li class="list-group-item">24/7 priority support</li>
+                                    <li class="list-group-item">Unlimited storage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center text-md-right">
-                <a href="#!" class="btn btn-primary btn-lg text-contrast p-4 more-link ml-md-auto">
-                    Request a Free Quote
-                </a>
+            <div class="container pt-0 border-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="text-center text-md-left">
+                            <h4 class="bold accent">Not sure which plan fits you best?</h4>
+                            <p class="mt-0">
+                                Start with the Starter plan for websites or apps, then upgrade as your business grows.
+                                <span class="italic dotted">All paid plans come with a 30-day free trial.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-right">
+                        <a href="#!" class="btn btn-primary btn-lg text-contrast p-4 more-link ml-md-auto">
+                            Request a Free Quote
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="section integration-bubbles">
             <div class="container overflow-hidden">
@@ -463,7 +467,8 @@
                             <p class="lead text-muted">
                                 WebNova is built on widely trusted technologies like React, Angular, Node.js, and
                                 Bootstrap — ensuring fast, secure, and scalable websites.
-                                With seamless integrations and strong community support, we deliver solutions tailored to help your business grow in the digital space.
+                                With seamless integrations and strong community support, we deliver solutions tailored
+                                to help your business grow in the digital space.
                             </p>
                         </div>
                         <a href="#!" class="more-link">Explore all integrations</a>
@@ -703,6 +708,8 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
