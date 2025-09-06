@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-  // Utility helpers
   function $(sel, ctx) {
     return (ctx || document).querySelector(sel);
   }
@@ -15,7 +14,6 @@
     return Math.min(Math.max(n, min), max);
   }
 
-  // Ensure AOS exists
   function ensureAOS(ready) {
     if (window.AOS && typeof window.AOS.init === "function") {
       ready();
@@ -32,7 +30,6 @@
     document.head.appendChild(script);
   }
 
-  // Sticky Navbar
   function setupStickyNav() {
     const nav = $(".main-nav");
     if (!nav) return;
@@ -40,7 +37,7 @@
     const applyStickyStyles = () => {
       nav.classList.add("is-sticky");
       nav.style.backgroundColor = "rgba(255,255,255,1)";
-      nav.style.color = "#fe4177"
+      nav.style.color = "#fe4177";
       nav.querySelectorAll("a").forEach(link => (link.style.color = "#fe4177"));
       nav.style.boxShadow = "0 8px 20px rgba(0,0,0,.08)";
     };
@@ -60,6 +57,7 @@
     on(window, "scroll", onScroll, { passive: true });
     onScroll();
   }
+
   function animateNumber(el, toValue, opts) {
     const options = Object.assign({ duration: 1200 }, opts || {});
     const start = performance.now();
@@ -136,6 +134,7 @@
       });
     });
   }
+
   function setupSwiper() {
     const containers = document.querySelectorAll(".swiper-container");
     containers.forEach(container => {
@@ -157,6 +156,7 @@
       });
     });
   }
+
   on(document, "DOMContentLoaded", () => {
     setupStickyNav();
     setupCounters();
